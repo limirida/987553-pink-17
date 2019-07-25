@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Pink</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -19,16 +20,16 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>Главная</a>
+          <a class="site-list__link" href="#">Главная</a>
         </li>
         <li class="site-list__item">
-          <a>Фотографии</a>
+          <a class="site-list__link" href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a>Конкурс</a>
+          <a class="site-list__link" href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
         </li>
       </ul>
     </div>
@@ -42,7 +43,7 @@
         alt="Как выглядит приложение в телефоне">
     </section>
     <section class="download">
-      <a class="button download__link" href="https://www.apple.com/ru/itunes/"></a>
+      <a class="button download__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
       <p class="download__item">
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </p>
@@ -50,7 +51,9 @@
     <section class="offer">
       <div class="offer__item">
         <h2 class="offer__heading">
-          Устали от серости мегаполиса?<br />Нам есть, что вам предложить!
+          Устали от серости мегаполиса?</h2>
+        <h2 class="offer__heading">
+          Нам есть, что вам предложить!
         </h2>
       </div>
     </section>
@@ -99,7 +102,7 @@
         </li>
       </ul>
       <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle slider__toggle--active" type="button">1</button>
         <button class="slider__toggle" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
       </p>
@@ -111,7 +114,7 @@
             <p class="tariffs__name">Стандарт</p>
             <p class="tariff__cost">3,99 USD</p>
           </div>
-          <ul class="components">
+          <ul class="tariffs__components components">
             <li class="components__list">
               <p class="components__item">Розовый фильтр</p>
               <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
@@ -133,7 +136,7 @@
       <div class="tariffs__wrapper">
         <p class="tariffs__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle slider__toggle--active" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
       </div>
@@ -141,7 +144,7 @@
   </main>
   <footer class="page-footer">
     <h2 class="page-footer__heading">
-      Остались вопросы?<br>Свяжитесь с нами!
+      Остались вопросы?Свяжитесь с нами!
     </h2>
     <ul class="page-footer__contacts contacts">
       <li class="page-footer__list">

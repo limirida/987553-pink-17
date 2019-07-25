@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Pink</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -19,27 +20,27 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a>Главная</a>
+          <a class="site-list__link" href="#">Главная</a>
         </li>
         <li class="site-list__item site-list__item--active">
-          <a>Фотографии</a>
+          <a class="site-list__link" href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a>Конкурс</a>
+          <a class="site-list__link" href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
         </li>
       </ul>
     </div>
   </nav>
   <main>
-    <section class="photos">
-      <h1 class="photos__heading">Фотографии пользователей</h1>
+    <section class="info">
+      <h1 class="info__heading">Фотографии пользователей</h1>
     </section>
-    <section class="users__photos">
-      <div class="users__photos__info">
-        <p class="users__photos__post">
+    <section class="users">
+      <div class="users__info">
+        <p class="users__post">
           Взгляните на фотографии, которые выкладывают пользователи!Видите,
           как не хватает ваших?
         </p>
@@ -60,7 +61,7 @@
               </p>
             </blockquote>
           </div>
-          <div class="likes">
+          <div class="gallery likes">
             <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
             <p class="likes_info">Нравится: 215</p>
           </div>
@@ -76,7 +77,7 @@
               </p>
             </blockquote>
           </div>
-          <div class="likes">
+          <div class="gallery likes">
             <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
             <p class="likes_info">Нравится: 356</p>
           </div>
@@ -92,7 +93,7 @@
               </p>
             </blockquote>
           </div>
-          <div class="likes">
+          <div class="gallery likes">
             <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
             <p class="likes_info">Нравится: 666</p>
           </div>
@@ -108,7 +109,7 @@
               </p>
             </blockquote>
           </div>
-          <div class="likes">
+          <div class="gallery likes">
             <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
             <p class="likes_info">Нравится: 215</p>
           </div>
@@ -124,7 +125,7 @@
               </p>
             </blockquote>
           </div>
-          <div class="likes">
+          <div class="gallery likes">
             <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
             <p class="likes_info">Нравится: 4</p>
           </div>
@@ -140,7 +141,7 @@
               </p>
             </blockquote>
           </div>
-          <div class="likes">
+          <div class="gallery likes">
             <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
             <p class="likes_info">Нравится: 150</p>
           </div>
@@ -156,7 +157,7 @@
               </p>
             </blockquote>
           </div>
-          <div class="likes">
+          <div class="gallery likes">
             <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
             <p class="likes_info">Нравится: 2560</p>
           </div>
@@ -168,30 +169,30 @@
         Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
       </p>
     </section>
-    <section class="create__post">
-      <div class="create__post__wrapper">
-        <img class="create__post__photo" src="http://placehold.it" width="280" height="374" alt="Зимняя дорога">
+    <section class="create">
+      <div class="create__wrapper">
+        <img class="create__photo" src="http://placehold.it" width="280" height="374" alt="Зимняя дорога">
       </div>
-      <div class="create__post__panel">
-        <button class="create__post__button--сut">
+      <div class="create__panel">
+        <button class="create__button--сut">
           <img class="button--сut" src="http://placehold.it" width="44" height="44" alt="Обрезать">
         </button>
-        <button class="create__post__button--filling">
+        <button class="create__button--filling">
           <img class="button--filling" src="http://placehold.it" width="48" height="43" alt="Заливка">
         </button>
-        <button class="create__post__button--white-filter">
+        <button class="create__button--white-filter">
           <img class="white-filter" width="32" height="32" alt="Фильтер белого">
         </button>
       </div>
-      <div class="create__post__range">
+      <div class="create__range">
         <div class="scale">
           <div class="bar"></div>
         </div>
         <div class="range-toggle"></div>
       </div>
-      <p class="creation__panel">
-        <button class="button creation__panel__post">Запостить</button>
-        <button class="button creation__panel__cancellation">Отмена</button>
+      <p class="create creation__panel">
+        <button class="button creation__post">Запостить</button>
+        <button class="button creation___cancellation">Отмена</button>
       </p>
     </section>
   </main>
@@ -201,16 +202,16 @@
     </div>
     <div class="footer__social">
       <ul class="footer__social__list">
-        <li class="footer__social__item">
+        <li class="footer__social social">
           <a class="social__link social__link--twitter" href="https://twitter.com" aria-label="Мы в твиттере">
             <img class="copyright__photo" src="http://placehold.it" width="27" height="34" alt="Твиттер">
           </a>
         </li>
-        <li class="footer__social__item">
+        <li class="footer__social social">
           <a class="social__link social__link--facebook" href="https://facebook.com" aria-label="Мы в фейсбуке"><img
               class="copyright__photo" src="http://placehold.it" width="27" height="34" alt="Фейсбук"></a>
         </li>
-        <li class="footer__social__item">
+        <li class="footer__social social">
           <a class="social__link social__link--youtube" href="https://youtube.com" aria-label="Мы в ютубе"><img
               class="copyright__photo" src="http://placehold.it" width="27" height="34" alt="Ютуб"></a>
         </li>
