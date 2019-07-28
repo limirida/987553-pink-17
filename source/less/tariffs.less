@@ -1,36 +1,50 @@
 .tariffs {
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
 .tariffs__name {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
+  margin: 0;
 }
 
 .tariffs__item {
-  border-left: solid 2px #ffffff;
-  border-right: solid 2px #ffffff;
+  border-left: solid 2px @white;
+  border-right: solid 2px @white;
   background-color: #283645;
-  color: #ffffff;
+  color: @white;
 }
 
 .tariff__cost {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.25;
+  margin: 0;
 }
 
 .tariffs__components {
-  background-color: #ffffff;
+  background-color: @white;
+}
+
+.components {
+  display: flex;
+  flex-direction: row;
+}
+
+.components__availability {
+  flex-grow: 1;
 }
 
 .components__list {
-  list-style: none;
   border: solid 2px #e5e5e5;
 }
 
 .components__item {
+  display: flex;
+  flex-grow: 3;
   font-size: 14px;
   line-height: 2.14;
   text-align: left;
@@ -42,5 +56,34 @@
 }
 
 .tariffs__toggles {
+  display: flex;
+  justify-content: center;
   padding: 45px 0 51px;
 }
+
+.base,
+.anlim {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .base,
+  .anlim {
+    display: block;
+  }
+
+  .tariffs__toggles {
+    display: none;
+  }
+
+  .components__item {
+    flex-grow: 0;
+  }
+
+  .components__availability {
+    flex-grow: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {}

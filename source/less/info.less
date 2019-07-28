@@ -3,14 +3,61 @@
   background-repeat: no-repeat;
   background-color: #283645;
   padding-bottom: 30px;
+}
 
+.info__headline {
+  font-weight: 300;
+  color: @white;
+  display: none;
+  text-align: center;
 }
 
 .info__heading {
+  margin: 0 auto;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  color: #ffffff;
+  color: @white;
   padding-top: 35px;
   padding-bottom: 307px;
+}
+
+.info__photo-image {
+  margin-top: 110px;
+}
+
+@media (min-width: @tablet-width) {
+  .info {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 10%;
+  }
+
+  .info__headline {
+    font-size: 40px;
+    display: block;
+    margin: 0;
+  }
+
+  .info__photo-image {
+    margin-top: 74px;
+  }
+
+  .info__heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: 50% 10%;
+  }
+
+  .info__photo-image {
+    margin: 100px 146 0;
+  }
+
+  .info__headline {
+    font-size: 50px;
+  }
 }

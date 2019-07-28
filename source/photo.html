@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -48,118 +49,139 @@
     </section>
     <section class="gallery">
       <ul class="gallery__list">
-        <li class="gallery__post">
-          <button class="gallery__button--panorama">ПАНОРАМА ДНЯ</button>
-          <img class="gallery__photo--panorama" src="http://placehold.it" width="320" height="137" alt="Мост над лесом">
-          <div class="gallery__post__user-info">
-            <cite class="gallery__post__user-name">Анна</cite>
-            <p class="gallery__post__user-time">(5 минут назад)</p>
-            <blockquote>
+        <li class="gallery__post panorama">
+          <button class="panorama__button">ПАНОРАМА ДНЯ</button>
+          <img class="panorama__photo" src="http://placehold.it" width="320" height="137" alt="Мост над лесом">
+          <div class="gallery__wrapper">
+            <div class="gallery__post__user-info">
+              <div class="gallery__user-wrapper">
+                <cite class="gallery__post__user-name">Анна</cite>
+                <p class="gallery__post__user-time">(5 минут назад)</p>
+              </div>
               <p class="gallery__post__user-text">
                 Прыгать или нет? Напишите в коментарии свой совет и смотрите
                 прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
-            </blockquote>
-          </div>
-          <div class="gallery likes">
-            <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
-            <p class="likes_info">Нравится: 215</p>
+            </div>
+            <div class="gallery likes">
+              <button class="likes_button"><img src="http://placehold.it" width="13" height="12"
+                  alt="Сердечко"></button>
+              <p class="likes_info">Нравится: 215</p>
+            </div>
           </div>
         </li>
         <li class="gallery__post">
           <img class="gallery__photo" src="http://placehold.it" width="280" height="180" alt="Тесла">
-          <div class="gallery__post__user-info">
-            <cite class="gallery__post__user-name">Левон</cite>
-            <p class="gallery__post__user-time">(5 часов назад)</p>
-            <blockquote>
+          <div class="gallery__wrapper">
+            <div class="gallery__post__user-info">
+              <div class="gallery__user-wrapper">
+                <cite class="gallery__post__user-name">Левон</cite>
+                <p class="gallery__post__user-time">(5 часов назад)</p>
+              </div>
               <p class="gallery__post__user-text">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
-            </blockquote>
-          </div>
-          <div class="gallery likes">
-            <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
-            <p class="likes_info">Нравится: 356</p>
+            </div>
+            <div class="gallery likes">
+              <button class="likes_button"><img src="http://placehold.it" width="13" height="12"
+                  alt="Сердечко"></button>
+              <p class="likes_info">Нравится: 356</p>
+            </div>
           </div>
         </li>
         <li class="gallery__post">
           <img class="gallery__photo" src="http://placehold.it" width="280" height="180" alt="Барабаны">
-          <div class="gallery__post__user-info">
-            <cite class="gallery__post__user-name">Антон</cite>
-            <p class="gallery__post__user-time">(12 часов назад)</p>
-            <blockquote>
+          <div class="gallery__wrapper">
+            <div class="gallery__post__user-info">
+              <div class="gallery__user-wrapper">
+                <cite class="gallery__post__user-name">Антон</cite>
+                <p class="gallery__post__user-time">(12 часов назад)</p>
+              </div>
               <p class="gallery__post__user-text">
                 Соседи будут рады!
               </p>
-            </blockquote>
-          </div>
-          <div class="gallery likes">
-            <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
-            <p class="likes_info">Нравится: 666</p>
+            </div>
+            <div class="gallery likes">
+              <button class="likes_button"><img src="http://placehold.it" width="13" height="12"
+                  alt="Сердечко"></button>
+              <p class="likes_info">Нравится: 666</p>
+            </div>
           </div>
         </li>
         <li class="gallery__post">
           <img class="gallery__photo" src="http://placehold.it" width="280" height="180" alt="Небо через решетку">
-          <div class="gallery__post__user-info">
-            <cite class="gallery__post__user-name">Борис</cite>
-            <p class="gallery__post__user-time">(20 часов назад)</p>
-            <blockquote>
+          <div class="gallery__wrapper">
+            <div class="gallery__post__user-info">
+              <div class="gallery__user-wrapper">
+                <cite class="gallery__post__user-name">Борис</cite>
+                <p class="gallery__post__user-time">(20 часов назад)</p>
+              </div>
               <p class="gallery__post__user-text">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
-            </blockquote>
-          </div>
-          <div class="gallery likes">
-            <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
-            <p class="likes_info">Нравится: 215</p>
+            </div>
+            <div class="gallery likes">
+              <button class="likes_button"><img src="http://placehold.it" width="13" height="12"
+                  alt="Сердечко"></button>
+              <p class="likes_info">Нравится: 215</p>
+            </div>
           </div>
         </li>
         <li class="gallery__post">
           <img class="gallery__photo" src="http://placehold.it" width="280" height="180" alt="Кубанская бахча">
-          <div class="gallery__post__user-info">
-            <cite class="gallery__post__user-name">Сергей</cite>
-            <p class="gallery__post__user-time">(25 часов назад)</p>
-            <blockquote>
+          <div class="gallery__wrapper">
+            <div class="gallery__post__user-info">
+              <div class="gallery__user-wrapper">
+                <cite class="gallery__post__user-name">Сергей</cite>
+                <p class="gallery__post__user-time">(25 часов назад)</p>
+              </div>
               <p class="gallery__post__user-text">
                 Самая кубанская в мире!
               </p>
-            </blockquote>
-          </div>
-          <div class="gallery likes">
-            <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
-            <p class="likes_info">Нравится: 4</p>
+            </div>
+            <div class="gallery likes">
+              <button class="likes_button"><img src="http://placehold.it" width="13" height="12"
+                  alt="Сердечко"></button>
+              <p class="likes_info">Нравится: 4</p>
+            </div>
           </div>
         </li>
         <li class="gallery__post">
           <img class="gallery__photo" src="http://placehold.it" width="280" height="180" alt="Ноги на фоне гор">
-          <div class="gallery__post__user-info">
-            <cite class="gallery__post__user-name">Максим</cite>
-            <p class="gallery__post__user-time">(40 часов назад)</p>
-            <blockquote>
+          <div class="gallery__wrapper">
+            <div class="gallery__post__user-info">
+              <div class="gallery__user-wrapper">
+                <cite class="gallery__post__user-name">Максим</cite>
+              </div>
+              <p class="gallery__post__user-time">(40 часов назад)</p>
               <p class="gallery__post__user-text">
                 Где снег-то?
               </p>
-            </blockquote>
-          </div>
-          <div class="gallery likes">
-            <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
-            <p class="likes_info">Нравится: 150</p>
+            </div>
+            <div class="gallery likes">
+              <button class="likes_button"><img src="http://placehold.it" width="13" height="12"
+                  alt="Сердечко"></button>
+              <p class="likes_info">Нравится: 150</p>
+            </div>
           </div>
         </li>
         <li class="gallery__post">
           <img class="gallery__photo" src="http://placehold.it" width="280" height="180" alt="Крыло самолета">
-          <div class="gallery__post__user-info">
-            <cite class="gallery__post__user-name">Надежда</cite>
-            <p class="gallery__post__user-time">(45 часов назад)</p>
-            <blockquote>
+          <div class="gallery__wrapper">
+            <div class="gallery__post__user-info">
+              <div class="gallery__user-wrapper">
+                <cite class="gallery__post__user-name">Надежда</cite>
+              </div>
+              <p class="gallery__post__user-time">(45 часов назад)</p>
               <p class="gallery__post__user-text">
                 Всем GM и взаимные лайки!
               </p>
-            </blockquote>
-          </div>
-          <div class="gallery likes">
-            <button class="likes_button"><img src="http://placehold.it" width="13" height="12" alt="Сердечко"></button>
-            <p class="likes_info">Нравится: 2560</p>
+            </div>
+            <div class="gallery likes">
+              <button class="likes_button"><img src="http://placehold.it" width="13" height="12"
+                  alt="Сердечко"></button>
+              <p class="likes_info">Нравится: 2560</p>
+            </div>
           </div>
         </li>
       </ul>
@@ -173,23 +195,41 @@
       <div class="create__wrapper">
         <img class="create__photo" src="http://placehold.it" width="280" height="374" alt="Зимняя дорога">
       </div>
-      <div class="create__panel">
-        <button class="create__button--сut">
-          <img class="button--сut" src="http://placehold.it" width="44" height="44" alt="Обрезать">
-        </button>
-        <button class="create__button--filling">
-          <img class="button--filling" src="http://placehold.it" width="48" height="43" alt="Заливка">
-        </button>
-        <button class="create__button--white-filter">
-          <img class="white-filter" width="32" height="32" alt="Фильтер белого">
-        </button>
-      </div>
-      <div class="create__range">
-        <div class="scale">
-          <div class="bar"></div>
-        </div>
-        <div class="range-toggle"></div>
-      </div>
+      <ul class="create__list">
+        <li class="create__item">
+          <button class="create__button--сut">
+            <img class="button--сut" src="http://placehold.it" width="44" height="44" alt="Обрезать">
+          </button>
+          <div class="create__range">
+            <div class="create__range__scale">
+              <div class="create__range__bar"></div>
+            </div>
+            <div class="create__range__toggle"></div>
+          </div>
+        </li>
+        <li class="create__item">
+          <button class="create__button--filling">
+            <img class="button--filling" src="http://placehold.it" width="48" height="43" alt="Заливка">
+          </button>
+          <div class="create__range">
+            <div class="create__range__scale">
+              <div class="create__range__bar"></div>
+            </div>
+            <div class="create__range__toggle"></div>
+          </div>
+        </li>
+        <li class="create__item">
+          <button class="create__button--white-filter">
+            <img class="white-filter" width="32" height="32" alt="Фильтер белого">
+          </button>
+          <div class="create__range">
+            <div class="create__range__scale">
+              <div class="create__range__bar"></div>
+            </div>
+            <div class="create__range__toggle"></div>
+          </div>
+        </li>
+      </ul>
       <p class="create creation__panel">
         <button class="button creation__post">Запостить</button>
         <button class="button creation___cancellation">Отмена</button>

@@ -1,19 +1,39 @@
-.main-nav {
-  background-color: #283645;
-  opacity: 0.3;
+.main-nav__toggle {
+  display: block;
 }
 
 .site-list {
   list-style: none;
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: #283645;
 }
 
 .site-list__item {
+  padding: 20px;
+  text-align: center;
   box-shadow: 0px 1px 0 0 #000000, inset 0px 1px 0 0 rgba(255, 255, 255, 0.15);
-  background-color: #283645;
 }
 
 .site-list__link {
   text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.78;
   color: #ffffff;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: @desktop-width;
+  }
+
+  .site-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

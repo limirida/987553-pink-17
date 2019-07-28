@@ -1,7 +1,8 @@
 .page-footer__heading {
+  text-align: center;
   font-size: 24px;
   font-weight: 300;
-  color: #283645;
+  color: @dark;
 }
 
 .page-footer__list {
@@ -25,4 +26,61 @@
   line-height: 1.29;
   text-align: left;
   color: #283645;
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0;
+}
+
+.page-footer__wrapper {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .page-footer__heading {
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .page-footer__item {
+    font-size: 18px;
+  }
+
+  .page-footer__info {
+    font-size: 24px;
+  }
+
+  .page-footer__contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .page-footer__contacts:nth-child(1),
+  .page-footer__contacts:nth-child(2) {
+    flex-basis: 238px;
+  }
+
+  .page-footer__contactss:nth-child(3) {
+    flex-basis: 208px, 50px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .page-footer__heading {
+    font-size: 50px;
+    font-weight: 300;
+  }
 }

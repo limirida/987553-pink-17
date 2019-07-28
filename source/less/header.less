@@ -1,4 +1,18 @@
 .page-header {
-  background-color: #283645;
   opacity: 0.3;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 0 0 @dark;
+  justify-content: space-around;
+}
+
+.page-header__logo {
+  width: 75px;
+  height: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 110px;
+  }
 }
