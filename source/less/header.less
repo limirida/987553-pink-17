@@ -1,9 +1,15 @@
 .page-header {
   opacity: 0.3;
+}
+
+.page-header__wrapp {
   display: flex;
   flex-direction: column;
   box-shadow: 0 1px 0 0 @dark;
   justify-content: space-around;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: #283645;
 }
 
 .page-header__logo {
@@ -14,5 +20,24 @@
 @media (min-width: @tablet-width) {
   .page-header {
     height: 110px;
+  }
+
+  .page-header__wrapp {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapp {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: 50% 20%;
+  }
+
+  .page-header {
+    flex-grow: 1;
+  }
+
+  .page-header__navigation {
+    display: flex;
   }
 }

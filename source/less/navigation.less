@@ -25,7 +25,7 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: @desktop-width;
+    flex-grow: 1;
   }
 
   .site-list {
@@ -35,5 +35,9 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .site-list__item {
+    box-shadow: none;
   }
 }
