@@ -12,32 +12,30 @@
 
 <body>
   <div class="page-header__wrapp">
-    <div class="page-header__navigation">
-      <header class="page-header">
-        <a class="page-header__logo" href="#">
-          <img class="page-header__logo-image" src="#" width="75" height="25" alt="Логотип сайта Pink">
-        </a>
-      </header>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="/source/img/logo-pink-white-mobile.svg" width="75" height="25"
+          alt="Логотип сайта Pink">
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+          </li>
+        </ul>
       </nav>
-    </div>
+    </header>
+
     <main class="page-main">
       <div class="page-main__wrapper">
         <section class="info">
@@ -99,6 +97,22 @@
           alt="Демонстрация приложения">
       </div>
     </div>
+    <div class="advantages__fact fact">
+      <div class="fact__wapper-image">
+        <!--Зaглушка для svg-->
+        <svg>
+          <text x="0" y="15">
+            <tspan style="font-weight: bold;">24</tspan>
+          </text>
+        </svg>
+      </div>
+      <div class="fact__info">
+        <h2 class="fact__name">Эффект на 24 часа!</h1>
+          <p class="fact__text">Британские ученые провели исследования и доказали,что положительный эффект от
+            использования приложения длится целые сутки!</p>
+          <a class="fact__more" href="#">Узнать больше об исследовании</a>
+      </div>
+    </div>
   </section>
   <section class="reviews">
     <h2 class="reviews__title visually-hidden">Отзывы о нас</h2>
@@ -124,27 +138,12 @@
       <button class="slider__toggle" type="button">2</button>
       <button class="slider__toggle" type="button">3</button>
     </p>
-    <div class="reviews fact">
-      <div class="fact__wapper-image">
-        <!--Зaглушка для svg-->
-        <svg>
-          <text x="0" y="15">
-            <tspan style="font-weight: bold;">24</tspan>
-          </text>
-        </svg>
-      </div>
-      <div class="fact__info">
-        <h2 class="fact__name">Эффект на 24 часа!</h1>
-          <p class="fact__text">Британские ученые провели исследования и доказали,что положительный эффект от
-            использования приложения длится целые сутки!</p>
-          <a class="fact__more" href="#">Узнать больше об исследовании</a>
-      </div>
   </section>
   <section class="tariffs">
     <div class="tariffs__wrapper">
       <table class="tariffs__list">
         <tr class="tariffs__info">
-          <td class="tariffs__item visually-hidden"></td>
+          <td class="tariffs__item zero"></td>
           <th class="tariffs__item base">
             <p class="tariffs__name">База</p>
             <p class="tariff__cost">1,99 USD</p>
@@ -158,8 +157,8 @@
             <p class="tariff__cost">9,99 USD</p>
           </td>
         </tr>
-        <tr class="tariffs components">
-          <td class="components__item">Розовый фильтр</td>
+        <tr class="tariffs__components">
+          <td class="components__item zero">Розовый фильтр</td>
           <td class="components__availability base">
             <p class="components__description">Розовый фильтр</p>
             <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
@@ -177,8 +176,8 @@
           </td>
         </tr>
         <tr>
-        <tr class="tariffs components">
-          <td class="components__item">Смайлики</td>
+        <tr class="tariffs__components">
+          <td class="components__item zero">Смайлики</td>
           <td class="components__availability base">
             <p class="components__description">Смайлики</p><img class="components__existence"
               src="http://placehold.it/150x100" width="31" height="21" alt="Входит в тариф">
@@ -192,8 +191,8 @@
               src="http://placehold.it/150x100" width="31" height="21" alt="Входит в тариф">
           </td>
         </tr>
-        <tr class="tariffs components">
-          <td class="components__item">Комментарии</td>
+        <tr class="tariffs__components">
+          <td class="components__item zero">Комментарии</td>
           <td class="components__availability base">
             <p class="components__description">Комментарии</p><img class="components__existence"
               src="http://placehold.it/150x100" width="31" height="21" alt="Входит в тариф">

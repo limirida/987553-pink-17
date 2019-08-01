@@ -1,3 +1,18 @@
+.tariffs {
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.tariffs__list {
+  width: 612px;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+.tariffs__item {
+  background-color: #283645;
+}
+
 .tariffs__name {
   font-size: 18px;
   font-weight: bold;
@@ -5,109 +20,45 @@
   margin: 0;
 }
 
-.tariffs__item {
-  width: 320px;
-  text-align: center;
-  border-left: solid 2px @white;
-  border-right: solid 2px @white;
-  background-color: #283645;
-  color: @white;
-}
-
-.tariff__cost {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.25;
-  margin: 0;
-}
-
-.tariffs__components {
-  background-color: @white;
-}
-
-.components__description {
-  width: 220px;
-  margin-left: 40px;
-}
-
-.components {
-  display: flex;
-}
-
-.tariffs__info {
-  display: flex;
-}
-
-.components__availability {
-  display: flex;
-  border: solid 2px #e5e5e5;
-  border-collapse: collapse;
-}
-
-.components__item,
-.base,
-.anlim {
+.zero {
   display: none;
 }
 
-.components__list {
-  border: solid 2px #e5e5e5;
-}
-
-.components__item {
-  font-size: 14px;
-  line-height: 2.14;
-  text-align: left;
-  color: #283645;
+.tariffs__item {
+  text-align: center;
+  color: @white;
 }
 
 .tariffs__toggles {
   width: 100%;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: center;
+  padding: 45px 0 48px;
 }
 
 @media (min-width: @tablet-width) {
-  .tariffs {
-    background-color: #f2f2f2;
-  }
-
-  .tariffs__info {
-    margin-left: 177px;
-  }
-
-  .tariffs__toggles {
-    display: none;
-  }
-
-  .base,
-  .anlim {
+  .zero {
     display: flex;
   }
 
-  .components__description {
-    display: none;
+  .tariffs__item:nth-child(1) {
+    background: #f2f2f2;
   }
 
   .components__item {
-    display: flex;
-    border: solid 2px #e5e5e5;
-    margin-left: 15px;
-    width: 152px;
+    width: 153px;
   }
 
-  .tariffs__list {
-    margin: 0 auto;
-    border: solid 2px #e5e5e5;
-    background-color: #ffffff;
+  .tariffs__components {
+    width: 220px;
   }
 
-  .tariffs__item {
-    display: block;
-    width: 160px;
+  .components__description {
+    font-size: 0;
   }
 
-  .components__availability {
-    width: 154px;
+  .components__existence {
+    margin: 16px 60px 10px;
   }
 }

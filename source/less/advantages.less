@@ -53,6 +53,21 @@
   background-color: #f2f2f2;
 }
 
+.fact {
+  display: none;
+}
+
+.fact__text {
+  font-size: 18px;
+  line-height: 1.67;
+  color: @dark;
+}
+
+.fact__more {
+  color: @lipstick;
+  font-size: 18px;
+  line-height: 1.67;
+}
 
 @media (min-width: @tablet-width) {
   .offer__heading {
@@ -79,6 +94,14 @@
   .advantages__item {
     text-align: left;
   }
+
+  .fact {
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    flex-basis: 295px, 202px;
+    align-items: flex-start;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -103,5 +126,12 @@
 
   .advantages__item {
     text-align: center;
+  }
+
+  .fact {
+    flex-basis: 595px, 197px;
+    margin-right: 180px;
+    font-size: 18px;
+    line-height: 1.67;
   }
 }

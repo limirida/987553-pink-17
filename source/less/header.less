@@ -1,26 +1,26 @@
 .page-header {
-  opacity: 0.3;
+  box-shadow: 0 1px 0 0 @dark;
+  min-height: 69px;
 }
 
 .page-header__wrapp {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 1px 0 0 @dark;
   justify-content: space-around;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #283645;
+  background-position: center;
 }
 
 .page-header__logo {
   width: 75px;
   height: 40px;
+  flex-grow: 1;
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
-    height: 110px;
-  }
 
   .page-header__wrapp {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -34,10 +34,10 @@
   }
 
   .page-header {
+    max-height: 110px;
     flex-grow: 1;
-  }
-
-  .page-header__navigation {
     display: flex;
+    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 1);
   }
 }
