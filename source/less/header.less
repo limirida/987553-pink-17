@@ -1,6 +1,8 @@
 .page-header {
   box-shadow: 0 1px 0 0 @dark;
-  min-height: 69px;
+  max-height: 66px;
+  background-color: #000000;
+  opacity: 0.4;
 }
 
 .page-header__wrapp {
@@ -15,9 +17,9 @@
 }
 
 .page-header__logo {
-  width: 75px;
-  height: 40px;
+  margin: 20px;
   flex-grow: 1;
+  fill: @white;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,10 +35,8 @@
   }
 
   .page-header {
-    max-height: 110px;
+    min-height: 110px;
     flex-grow: 1;
     display: flex;
-    opacity: 0.3;
-    background-color: rgba(0, 0, 0, 1);
   }
 }
