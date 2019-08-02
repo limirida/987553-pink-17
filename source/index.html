@@ -13,13 +13,15 @@
 <body>
   <div class="page-header__wrapp">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="/source/img/logo-pink-white-mobile.svg" width="75" height="25"
-          alt="Логотип сайта Pink">
-      </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть
+      <div class="page-header__wrapp-content">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="/source/img/logo-pink-white-mobile.svg" width="75" height="25"
+            alt="Логотип сайта Pink">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть
             меню</span></button>
+      </div>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -144,72 +146,81 @@
   </section>
   <section class="tariffs">
     <div class="tariffs__wrapper">
-      <table class="tariffs__list">
-        <tr class="tariffs__info">
-          <td class="tariffs__item zero"></td>
-          <th class="tariffs__item base">
-            <p class="tariffs__name">База</p>
-            <p class="tariff__cost">1,99 USD</p>
-          </th>
-          <td class="tariffs__item standard">
-            <p class="tariffs__name">Стандарт</p>
-            <p class="tariff__cost">3,99 USD</p>
-          </td>
-          <td class="tariffs__item anlim">
-            <p class="tariffs__name">Анлим</p>
-            <p class="tariff__cost">9,99 USD</p>
-          </td>
-        </tr>
-        <tr class="tariffs__components">
-          <td class="components__item zero">Розовый фильтр</td>
-          <td class="components__availability base">
-            <p class="components__description">Розовый фильтр</p>
-            <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-              alt="Входит в тариф">
-          </td>
-          <td class="components__availability standart">
-            <p class="components__description">Розовый фильтр</p>
-            <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-              alt="Входит в тариф">
-          </td>
-          <td class="components__availability anlim">
-            <p class="components__description">Розовый фильтр</p>
-            <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-              alt="Входит в тариф">
-          </td>
-        </tr>
-        <tr>
-        <tr class="tariffs__components">
-          <td class="components__item zero">Смайлики</td>
-          <td class="components__availability base">
-            <p class="components__description">Смайлики</p><img class="components__existence"
-              src="http://placehold.it/150x100" width="31" height="21" alt="Входит в тариф">
-          </td>
-          <td class="components__availability standart">
-            <p class="components__description">Смайлики</p><img class="components__existence"
-              src="http://placehold.it/150x100" width="31" height="21" alt="Входит в тариф">
-          </td>
-          <td class="components__availability anlim">
-            <p class="components__description">Смайлики</p><img class="components__existence"
-              src="http://placehold.it/150x100" width="31" height="21" alt="Входит в тариф">
-          </td>
-        </tr>
-        <tr class="tariffs__components">
-          <td class="components__item zero">Комментарии</td>
-          <td class="components__availability base">
-            <p class="components__description">Комментарии</p><img class="components__existence"
-              src="http://placehold.it/150x100" width="31" height="21" alt="Входит в тариф">
-          </td>
-          <td class="components__availability standart">
-            <p class="components__description">Комментарии</p><img class="components__existence"
-              src="http://placehold.it/150x100" width="31" height="21" alt="Входит в тариф">
-          </td>
-          <td class="components__availability anlim">
-            <p class="components__description">Комментарии</p><img class="components__existence"
-              src="http://placehold.it/150x100" width="31" height="21" alt="Входит в тариф">
-          </td>
-        </tr>
-      </table>
+      <div class="tariffs__companents">
+        <div class="tariffs__item zero"></div>
+        <div class="components__availability">
+          <p class="components__description">Розовый фильтр</p>
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Смайлики</p>
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Комментарии</p>
+        </div>
+      </div>
+      <div class="tariffs__companents ">
+        <div class="tariffs__item  base">
+          <p class="tariffs__name">База</p>
+          <p class="tariff__cost">1,99 USD</p>
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Розовый фильтр</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Смайлики</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Комментарии</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+      </div>
+      <div class="tariffs__companents">
+        <div class="tariffs__item standart">
+          <p class="tariffs__name">Стандарт</p>
+          <p class="tariff__cost">3,99 USD</p>
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Розовый фильтр</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Смайлики</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Комментарии</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+      </div>
+      <div class="tariffs__companents">
+        <div class="tariffs__item anlim">
+          <p class="tariffs__name">Анлим</p>
+          <p class="tariff__cost">9,99 USD</p>
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Розовый фильтр</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Смайлики</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Комментарии</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+      </div>
     </div>
     </ul>
     <p class="tariffs__toggles slider__toggles">
