@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 - Студент: [Надежда Дайнеко](https://up.htmlacademy.ru/adaptive/17/user/987553).
-- Наставник: [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport).
+- Наставник: [Андрей Колесников](https://up.htmlacademy.ru/adaptive/17/tutors).
 
 ---
 
