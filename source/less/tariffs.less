@@ -4,10 +4,14 @@
   background: #f2f2f2;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .tariffs__wrapper {
+  width: 900px;
+  height: 300px;
   display: flex;
+  transform: translateX(-250px);
 }
 
 .tariffs__item {
@@ -16,6 +20,7 @@
   text-align: center;
   color: @white;
   min-height: 75px;
+  border: solid 1px #e5e5e5;
 }
 
 .tariffs__name {
@@ -52,16 +57,78 @@
 }
 
 .components__existence {
-  padding-right: 18px;
+  padding-right: 20px;
 }
 
 .tariffs__item.zero {
-  background-color: @white;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .tariffs__toggles {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.tariffs__companents:nth-child(1) {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .tariffs {
+    width: 660px;
+    overflow: visible;
+  }
+
+  .tariffs__item {
+    width: 153px;
+  }
+
+  .tariffs__wrapper {
+    width: 616px;
+    transform: none;
+    margin: auto;
+  }
+
+  .tariffs__companents:nth-child(1) {
+    display: block;
+  }
+
+  .base .components__description,
+  .standart .components__description,
+  .anlim .components__description {
+    font-size: 0;
+  }
+
+  .base.components__existence {
+    display: none;
+  }
+
+  .components__existence {
+    margin: 16px auto 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariffs__item {
+    width: 233px;
+  }
+
+  .components__description {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .components__existence {
+    margin: 16px auto 27px;
+  }
+
+  .tariffs__wrapper {
+    width: 940px;
+  }
+
+  .tariffs {
+    width: 100%;
+  }
 }

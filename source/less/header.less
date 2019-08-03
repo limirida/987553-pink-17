@@ -10,18 +10,20 @@
 }
 
 .page-header__logo {
+  width: 75px;
   margin: 20px;
   flex-grow: 1;
   fill: @white;
 }
 
-.page-header__toggle {
+.main-nav__toggle {
+  position: absolute;
   display: block;
   padding: 0;
   width: 52px;
   height: 26px;
-  margin-top: 20px;
-  margin-right: 20px;
+  top: -40px;
+  right: 20px;
   background: none;
   cursor: pointer;
   border: none;
@@ -49,9 +51,11 @@
   .page-header {
     flex-grow: 1;
     display: flex;
+    background-color: #000000;
+    opacity: 0.4;
   }
 
-  .page-header__toggle {
+  .main-nav__toggle {
     display: none;
   }
 }
