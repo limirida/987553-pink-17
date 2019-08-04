@@ -1,10 +1,10 @@
 @import "header.less";
-@import "navigation.less";
 @import "info.less";
+@import "navigation.less";
 @import "download.less";
 @import "button.less";
 @import "visually-hidden.less";
-@import "offer.less";
+@import "page-main.less";
 @import "advantages.less";
 @import "reviews.less";
 @import "tariffs.less";
@@ -15,6 +15,8 @@
 @import "appeal.less";
 @import "create.less";
 @import "footer.less";
+@import "variables.less";
+@import "mixin.less";
 
 @font-face {
   font-family: "Open San";
@@ -22,7 +24,6 @@
     url("../fonts/opensans.woff2");
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
@@ -31,7 +32,6 @@
     url("../fonts/opensansbold.woff2");
   font-weight: bold;
   font-style: bold;
-
 }
 
 @font-face {
@@ -40,9 +40,15 @@
     url("../fonts/opensanslight.woff2");
   font-weight: light;
   font-style: light;
-
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100;
+  height: auto;
 }

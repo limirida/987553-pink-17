@@ -1,25 +1,26 @@
-.gallery__button--panorama {
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 2;
-  color: #ffffff;
-  background-color: #d22856;
-  border: none;
-  padding: 13px 20px 11px;
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
 }
 
 .gallery__post {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  line-height: 1.71;
+  color: @dark;
 }
 
+.gallery__wrapper {
+  width: 280px;
+}
 
-.gallery__post__user-info {
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.71;
-  text-align: left;
-  color: #283645;
-  background-color: #f2f2f2;
+.gallery__user-wrapper {
+  display: flex;
 }
 
 .gallery__post__user-name {
@@ -28,21 +29,60 @@
 }
 
 .gallery__post__user-time {
+  margin: 0;
   font-weight: 300;
 }
 
 .gallery__post__user-text {
+  text-align: left;
   font-size: 12px;
   font-weight: 300;
+  margin: 0;
 }
 
 .likes {
-  background-color: #f2f2f2;
+  width: 280px;
+  display: flex;
 }
 
 .likes_info {
+  color: @lipstick;
+}
+
+.panorama__button {
+  width: 140px;
   font-size: 12px;
+  font-weight: bold;
   line-height: 2;
-  text-align: left;
-  color: #d22856;
+  color: @white;
+  background-color: #d22856;
+  border: none;
+  padding: 13px 20px 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    width: @tablet-width;
+  }
+
+  .gallery__wrapper {
+    width: 300px;
+  }
+
+  .gallery__wrapper--panorama {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery {
+    width: @desktop-width;
+  }
+
+
+  .gallery__wrapper--panorama {
+    width: 940px;
+  }
 }

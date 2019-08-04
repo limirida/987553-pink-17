@@ -2,65 +2,76 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pink</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="#" width="75" height="25" alt="Логотип сайта Pink">
-    </a>
-  </header>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link" href="#">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <main class="page-main">
-    <h1 class="visually-hidden">
-      Приложение "Pink"-Взгляните на жизнь иначе!
-    </h1>
-    <section class="info">
-      <img class="info__photo-image" src="http://placehold.it/150x100" width="320" height="314"
-        alt="Как выглядит приложение в телефоне">
-    </section>
-    <section class="download">
-      <a class="button download__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
-      <p class="download__item">
-        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-      </p>
-    </section>
-    <section class="offer">
-      <div class="offer__item">
-        <h2 class="offer__heading">
-          Устали от серости мегаполиса?</h2>
-        <h2 class="offer__heading">
-          Нам есть, что вам предложить!
-        </h2>
+  <div class="page-header__wrapp">
+    <header class="page-header">
+      <div class="page-header__wrapp-content">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="/source/img/logo-pink-white-mobile.svg" width="75" height="25"
+            alt="Логотип сайта Pink">
+        </a>
       </div>
-    </section>
-    <section class="advantages">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+            меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main__wrapper">
+        <section class="info">
+          <img class="info__photo-image" src="http://placehold.it/150x100" width="320" height="314"
+            alt="Как выглядит приложение в телефоне">
+        </section>
+        <section class="download">
+          <h1 class="download__headline">
+            Взгляните на жизнь иначе!
+          </h1>
+          <a class="button download__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+          <p class="download__item">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </section>
+      </div>
+  </div>
+  <section class="advantages">
+    <div class="advantages offer">
+      <h2 class="offer__heading">
+        Устали от серости мегаполиса?<br>
+        Нам есть, что вам предложить!
+      </h2>
+    </div>
+    </div>
+    <div class="advantages__example">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
+          <img class="advantages__list--photo" src="http://placehold.it/150x100" width="157" height="320"
+            alt="Демонстрация приложения">
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__description">
             Приложение позволит вам победить осеннюю хандру и депрессию
@@ -68,6 +79,8 @@
           </p>
         </li>
         <li class="advantages__item">
+          <img class="advantages__list--photo" src="http://placehold.it/150x100" width="157" height="320"
+            alt="Демонстрация приложения">
           <h3 class="advantages__title">Меняет мир вокруг</h3>
           <p class="advantages__description">
             Сделайте снимок и украсьте его смайликом или текстовой подписью,
@@ -75,76 +88,151 @@
           </p>
         </li>
         <li class="advantages__item">
+          <img class="advantages__list--photo" src="http://placehold.it/150x100" width="157" height="320"
+            alt="Демонстрация приложения">
           <h3 class="advantages__title">Заводит новых друзей</h3>
           <p class="advantages__description">
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
             заводите новых
           </p>
         </li>
-        <li class="advantages__item">
-          <img class="advantages__list--photo" src="http://placehold.it/150x100" width="157" height="320"
-            alt="Демонстрация приложения">
-        </li>
       </ul>
-    </section>
-    <section class="reviews">
-      <h2 class="reviews__title visually-hidden">Отзывы о нас</h2>
-      <ul class="reviews__wrapper slider">
-        <li class="reviews__list slider__list">
-          <cite class="reviews__author-name">Николай Петров</cite>
-          <blockquote>
-            <p class="reviews__text">
-              «Это приложение перевернуло мой мир и позволило по-новому
-              взглянуть на привычные серые вещи! А еще я познакомился со своей
-              будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </blockquote>
-        </li>
-      </ul>
-      <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--active" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
-    </section>
-    <section class="tariffs">
-      <ul class="tariffs__wrapper slider">
-        <li class="tariffs__list slider__list">
-          <div class="tariffs__item">
-            <p class="tariffs__name">Стандарт</p>
-            <p class="tariff__cost">3,99 USD</p>
-          </div>
-          <ul class="tariffs__components components">
-            <li class="components__list">
-              <p class="components__item">Розовый фильтр</p>
-              <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-                alt="Входит в тариф">
-            </li>
-            <li class="components__list">
-              <p class="components__item">Смайлики</p>
-              <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-                alt="Входит в тариф" />
-            </li>
-            <li class="components__list">
-              <p class="components__item">Комментарии</p>
-              <img class="components__existence" src="http://placehold.it/150x100" width="27" height="26"
-                alt="Не входит в тариф">
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <div class="tariffs__wrapper">
-        <p class="tariffs__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--active" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+      <div class="advantages__photo">
+        <img class="advantages__list--image" src="http://placehold.it/150x100" width="157" height="320"
+          alt="Демонстрация приложения">
       </div>
-    </section>
+    </div>
+    <div class="advantages__fact fact">
+      <div class="fact__wapper-image">
+        <!--Зaглушка для svg-->
+        <svg>
+          <text x="0" y="15">
+            <tspan style="font-weight: bold;">24</tspan>
+          </text>
+        </svg>
+      </div>
+      <div class="fact__info">
+        <h2 class="fact__name">Эффект на 24 часа!</h1>
+          <p class="fact__text">Британские ученые провели исследования и доказали,что положительный эффект от
+            использования приложения длится целые сутки!</p>
+          <a class="fact__more" href="#">Узнать больше об исследовании</a>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <h2 class="reviews__title visually-hidden">Отзывы о нас</h2>
+    <ul class="reviews__wrapper slider">
+      <li class="reviews__list slider__list">
+        <div class="reviews author">
+          <cite class="author__name">Николай Петров</cite>
+          <p class="author__info">
+            25 лет, водитель трамвая
+          </p>
+        </div>
+        <blockquote class="reviews__post">
+          <p class="reviews__text">
+            «Это приложение перевернуло мой мир и позволило по-новому
+            взглянуть на привычные серые вещи! А еще я познакомился со своей
+            будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </blockquote>
+      </li>
+    </ul>
+    <p class="reviews__toggles slider__toggles">
+      <button class="slider__toggle slider__toggle--active" type="button">1</button>
+      <button class="slider__toggle" type="button">2</button>
+      <button class="slider__toggle" type="button">3</button>
+    </p>
+  </section>
+  <section class="tariffs">
+    <div class="tariffs__wrapper">
+      <div class="tariffs__companents">
+        <div class="tariffs__item zero"></div>
+        <div class="components__availability">
+          <p class="components__description">Розовый фильтр</p>
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Смайлики</p>
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Комментарии</p>
+        </div>
+      </div>
+      <div class="tariffs__companents slider base">
+        <div class="tariffs__item">
+          <p class="tariffs__name">База</p>
+          <p class="tariff__cost">1,99 USD</p>
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Розовый фильтр</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Смайлики</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Комментарии</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+      </div>
+      <div class="tariffs__companents standart slider">
+        <div class="tariffs__item">
+          <p class="tariffs__name">Стандарт</p>
+          <p class="tariff__cost">3,99 USD</p>
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Розовый фильтр</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Смайлики</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Комментарии</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+      </div>
+      <div class="tariffs__companents anlim slider">
+        <div class="tariffs__item">
+          <p class="tariffs__name">Анлим</p>
+          <p class="tariff__cost">9,99 USD</p>
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Розовый фильтр</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Смайлики</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+        <div class="components__availability">
+          <p class="components__description">Комментарии</p>
+          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
+            alt="Входит в тариф">
+        </div>
+      </div>
+    </div>
+    </ul>
+    <p class="tariffs__toggles slider__toggles">
+      <button class="slider__toggle" type="button">1</button>
+      <button class="slider__toggle slider__toggle--active" type="button">2</button>
+      <button class="slider__toggle" type="button">3</button>
+      </div>
+  </section>
   </main>
   <footer class="page-footer">
     <h2 class="page-footer__heading">
-      Остались вопросы?Свяжитесь с нами!
+      Остались вопросы?<br>Свяжитесь с нами!
     </h2>
     <ul class="page-footer__contacts contacts">
       <li class="page-footer__list">
@@ -165,7 +253,72 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858715614293!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562944916394!5m2!1sru!2sru"
         width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
+    <div class="page-footer__wrapper">
+      <div class="footer-logo">
+        <img class="footer-logo__photo" src="http://placehold.it" width="147" height="40" alt="Логотип Pink с очками">
+      </div>
+      <div class="footer__social">
+        <ul class="footer__social__list">
+          <li class="footer__social social">
+            <a class="social__link social__link--twitter" href="https://twitter.com" aria-label="Мы в твиттере">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px"
+                viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z" />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social social">
+            <a class="social__link social__link--facebook" href="https://facebook.com" aria-label="Мы в фейсбуке">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px"
+                viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                <path
+                  d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social social">
+            <a class="social__link social__link--youtube" href="https://youtube.com" aria-label="Мы в ютубе">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px"
+                viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                <path
+                  d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__photo"
+            src="http://placehold.it" width="27" height="34" alt="Логотп Html academy"></a>
+      </div>
+    </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 </body>
 
 </html>
