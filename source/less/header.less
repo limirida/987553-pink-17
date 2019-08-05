@@ -8,8 +8,7 @@
   background-color: #283645;
   background-position: 50% -100px;
 
-  @media (min-resolution: @retina-dpi),
-  (min-resolution: @retina-dppx) {
+  @media (min-resolution: @retina-dpi) and (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
@@ -54,8 +53,7 @@
   .page-header__wrapp {
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
-    @media (min-width: 660px) and (min-resolution: 144dpi),
-    (min-width: 660px) and (min-resolution: 1.5dppx) {
+    @media (min-width: 660px) and (min-resolution: 144dpi) and (min-width: 660px) and (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
@@ -66,8 +64,7 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: 50% 20%;
 
-    @media (min-width: 1200px) and (min-resolution: 144dpi),
-    (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    @media (min-width: 1200px) and (min-resolution: 144dpi) and (min-width: 1200px) and (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
