@@ -45,15 +45,20 @@
 }
 
 .components__description {
+  width: 130px;
   font-size: 14px;
   line-height: 2.14;
   padding-left: 22px;
+  text-align: left;
+  margin: 0;
 }
 
 .components__availability {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border: solid 1px #e5e5e5;
+  min-height: 45px;
+  align-items: center;
 }
 
 .components__existence {
@@ -63,6 +68,7 @@
 .tariffs__item.zero {
   border: none;
   background-color: #f2f2f2;
+  margin: 1px;
 }
 
 .tariffs__toggles {
@@ -73,6 +79,23 @@
 
 .tariffs__companents:nth-child(1) {
   display: none;
+}
+
+.standart .tariffs__item {
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+}
+
+.components__existence--yes {
+  width: 31px;
+  height: 21px;
+  fill: #3dc644;
+}
+
+.components__existence--no {
+  width: 27px;
+  height: 26px;
+  fill: #f25b26;
 }
 
 @media (min-width: @tablet-width) {
@@ -98,7 +121,7 @@
   .base .components__description,
   .standart .components__description,
   .anlim .components__description {
-    font-size: 0;
+    display: none;
   }
 
   .base.components__existence {
@@ -108,6 +131,10 @@
   .components__existence {
     margin: 16px auto 18px;
   }
+
+  .standart .tariffs__item {
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -115,13 +142,14 @@
     width: 233px;
   }
 
-  .components__description {
-    font-size: 18px;
-    line-height: 1.67;
+  .components__availability {
+    width: 234px;
   }
 
-  .components__existence {
-    margin: 16px auto 27px;
+  .components__description {
+    width: 144px;
+    font-size: 18px;
+    line-height: 1.67;
   }
 
   .tariffs__wrapper {

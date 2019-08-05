@@ -45,10 +45,6 @@
   display: none;
 }
 
-.advantages__photo {
-  margin: 0 auto;
-}
-
 .advantages__example {
   background-color: #f2f2f2;
 }
@@ -67,6 +63,11 @@
   color: @lipstick;
   font-size: 18px;
   line-height: 1.67;
+}
+
+.advantages__photo {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -126,6 +127,11 @@
 
   .advantages__item {
     text-align: center;
+  }
+
+  .fact__wapper-image {
+    width: 238px;
+    margin: 55px auto;
   }
 
   .fact {
