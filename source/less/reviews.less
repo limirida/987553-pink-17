@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.reviews__quotes {
+  display: none;
+}
+
 .author {
   text-align: center;
 }
@@ -35,7 +39,7 @@
 .reviews__toggles {
   display: flex;
   justify-content: center;
-  padding: 43px 0 114px;
+  margin: 42px auto 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -57,8 +61,14 @@
     line-height: 2.14;
   }
 
+  .reviews__quotes {
+    display: block;
+    margin: 79px auto 58px;
+  }
+
   .reviews__text {
-    flex-basis: 685px;
+    margin: 0 auto;
+    width: 685px;
   }
 
   .author__name {

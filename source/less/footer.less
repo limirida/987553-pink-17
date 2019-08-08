@@ -18,11 +18,11 @@
   border-radius: 50%;
   margin: 8px;
 
-  &hover {
+  &:hover {
     border: solid 3px #283645;
   }
 
-  &active {
+  &:active {
     opacity: 0.1;
   }
 }
@@ -53,14 +53,40 @@
   fill: @lipstick;
   margin: 0 15px;
 
-  &hover {
+  &:hover {
     fill: #283645;
   }
 
-  &active {
+  &:active {
     opacity: 0.3;
     background-color: #283645;
   }
+}
+
+.footer-logo--pink {
+  &:hover {
+    fill: @lipstick;
+  }
+}
+
+.footer-logo--photo {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__map {
+  position: relative;
+}
+
+.map {
+  content: "";
+  width: 320px;
+  height: 123px;
+  position: absolute;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 @media (min-width: @tablet-width) {
@@ -68,10 +94,31 @@
     justify-content: space-between;
     margin: 40px 20px;
   }
+
+  .map__info {
+    width: 100%;
+  }
+
+  .map {
+    width: 660px;
+    background-size: 660px;
+    top: -2px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .footer {
     margin: 98px 130px;
+  }
+
+  .map__info {
+    width: 100%;
+    background-position: 0 20px;
+  }
+
+  .map {
+    width: 1200px;
+    background-size: 1200px;
+    background-position: center;
   }
 }
