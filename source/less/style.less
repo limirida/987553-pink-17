@@ -19,27 +19,26 @@
 @import "mixin.less";
 
 @font-face {
-  font-family: "Open San";
-  src: url("../fonts/opensans.woff"),
-    url("../fonts/opensans.woff2");
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format(woff2),
+    url("../fonts/opensans.woff") format(woff);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open San";
-  src: url("../fonts/opensansbold.woff"),
-    url("../fonts/opensansbold.woff2");
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format(woff2),
+    url("../fonts/opensansbold.woff") format(woff);
   font-weight: bold;
-  font-style: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Open San";
-  src: url("../fonts/opensanslight.woff"),
-    url("../fonts/opensanslight.woff2");
-  font-weight: light;
-  font-style: light;
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format(woff2),
+    url("../fonts/opensanslight.woff") format(woff);
+  font-weight: 300;
 }
 
 body {
@@ -49,6 +48,6 @@ body {
 }
 
 img {
-  max-width: 100;
+  max-width: 100%;
   height: auto;
 }

@@ -1,11 +1,10 @@
 .tariffs {
-  margin-top: 138px;
-  width: 320px;
+  padding-top: 157px;
   text-align: center;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: linear-gradient(175deg, @white 50%, #f2f2f2 50%);
+  background: linear-gradient(-4deg, #f2f2f2 80%, @white 80%);
 }
 
 .tariffs__wrapper {
@@ -76,6 +75,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 51px;
 }
 
 .tariffs__companents:nth-child(1) {
@@ -103,6 +103,7 @@
   .tariffs {
     width: 660px;
     overflow: visible;
+    padding-top: 114px;
   }
 
   .tariffs__item {
@@ -136,9 +137,18 @@
   .standart .tariffs__item {
     background-image: url("../img/bg-hit-tablet.svg");
   }
+
+  .tariffs__toggles {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .tariffs {
+    width: 1200px;
+    padding-top: 159px;
+  }
+
   .tariffs__item {
     width: 233px;
   }
@@ -155,9 +165,5 @@
 
   .tariffs__wrapper {
     width: 940px;
-  }
-
-  .tariffs {
-    width: 100%;
   }
 }

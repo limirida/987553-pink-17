@@ -6,7 +6,12 @@
 }
 
 .gallery__post:nth-child(1) {
-  margin: 10px 0;
+  width: 100%;
+}
+
+.panorama__photo {
+  width: 100%;
+  margin: 0;
 }
 
 .gallery__post {
@@ -70,11 +75,6 @@
   padding: 13px 20px 11px;
 }
 
-.panorama__photo {
-  width: 100%;
-  margin: 0;
-}
-
 .gallery__photo {
   width: 100%;
 }
@@ -92,6 +92,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .gallery__wrapper--panorama {
+    width: 620px;
+    margin: 0 20px;
+  }
+
   .gallery {
     width: @tablet-width;
   }
@@ -122,6 +127,7 @@
   }
 
   .gallery__wrapper--panorama {
+    text-align: center;
     width: 940px;
   }
 

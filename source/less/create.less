@@ -33,6 +33,15 @@
   border: solid 3px #d22856;
   color: #d22856;
   margin-bottom: 12px;
+
+  &:hover {
+    color: @white;
+    background-color: @lipstick;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .creation___cancellation {
@@ -42,6 +51,17 @@
   line-height: 1;
   border: solid 3px rgba(40, 54, 69, 0.1);
   color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    border: solid 3px rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    opacity: 0.3;
+    border: solid 3px rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .create__range {
@@ -84,6 +104,10 @@
   border: none;
   background: none;
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   &:active {
     fill: @lipstick;
@@ -139,6 +163,12 @@
     width: 410px;
   }
 
+  .create__list {
+    margin: 57px 70px 0;
+    display: block;
+    max-height: 314px;
+  }
+
   .create__photo {
     margin: 57px 80px;
   }
@@ -149,16 +179,20 @@
   }
 
   .create__list__wrapper {
+    margin-left: -50px;
     width: 410px;
   }
 
   .creation__panel {
-    margin-top: 146px;
-    justify-content: space-between;
+    margin: 0;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 0;
   }
 
   .creation__post {
     width: 183px;
+    margin-right: 44px;
   }
 
   .creation___cancellation {

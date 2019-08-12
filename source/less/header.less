@@ -3,29 +3,29 @@
   flex-direction: column;
   justify-content: space-around;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: 100% cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #283645;
   background-position: 50% -100px;
-
-  @media (min-resolution: @retina-dpi) and (min-resolution: @retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-  }
 }
 
 .page-header__logo {
   width: 75px;
   margin: 20px;
+  fill: @white;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: @white;
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo--image {
   margin-left: -70px;
-}
-
-.icon-pink--mobile {
-  &:active {
-    fill: @lipstick;
-  }
 }
 
 .main-nav__toggle {
@@ -43,7 +43,6 @@
 
 .page-header__wrapp-content {
   display: flex;
-  box-shadow: 0 1px 0 0 @dark;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -59,6 +58,7 @@
 @media (min-width: @tablet-width) {
   .page-header__wrapp {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center bottom;
 
     @media (min-width: 660px) and (min-resolution: 144dpi) and (min-width: 660px) and (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -99,6 +99,15 @@
   }
 
   .star {
-    display: inline;
+    display: inline-block;
+    fill: #d22856;
+  }
+
+  .page-header__wrapp-content {
+    display: block;
+  }
+
+  .page-header__logo--image {
+    margin: 27px 130px 43px;
   }
 }
