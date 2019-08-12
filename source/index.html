@@ -5,18 +5,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="js/picturefill.js">
 </head>
 
 <body>
+  <svg style="display:none">
+    <symbol id="icon-pink">
+      <g class="icon-pink--mobile">
+        <path
+          d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.064c0 4.861-4.057 7.373-8.854 7.373h-5.475v6.825c0 .708-.58 1.288-1.288 1.288-.676 0-1.256-.58-1.256-1.288v-20.12zm8.114 10.98c3.734 0 6.182-1.996 6.182-4.959v-.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917h5.57v-.001zM93.603 18.5c0-.708.579-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283a1.29 1.29 0 0 1-1.288 1.287c-.676 0-1.255-.579-1.255-1.287V18.5zM102.744 18.532c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.676 0 1.224.58 1.224 1.256v20.349c0 .676-.481 1.19-1.158 1.19h-.129c-.548 0-.935-.321-1.319-.772l-13.975-17.868v17.45c0 .676-.547 1.256-1.256 1.256-.676 0-1.223-.58-1.223-1.256V18.532h-.002zM128.173 18.5c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.168c.29-.257.579-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.162.644-.42.901l-7.984 7.92 8.564 10.561c.225.291.354.547.354.935 0 .676-.578 1.288-1.286 1.288-.483 0-.806-.258-1.03-.58l-8.402-10.463-4.863 4.861v4.894a1.29 1.29 0 0 1-1.286 1.288c-.677 0-1.257-.58-1.257-1.288V18.5h-.004z" />
+      </g>
+      <g class="star">
+        <path
+          d="M98.498,9.875c-2.002,0-3.623-1.623-3.623-3.624c0,2.001-1.623,3.624-3.625,3.624 c2.002,0,3.625,1.623,3.625,3.624C94.875,11.498,96.496,9.875,98.498,9.875z" />
+      </g>
+      <g class="icon-pink--glass">
+        <path
+          d="M60.462 28.016L55.287 6.651C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 1 0 0 3c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.742-5.927-5.802-10.531-11.927-10.531s-11.186 4.604-11.927 10.531h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42L8.187 7.143C8.25 6.729 8.97 3 13.826 3a1.5 1.5 0 1 0 0-3C7.82 0 5.588 4.303 5.227 6.651L.052 28.016c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.741 5.926 5.802 10.53 11.927 10.53s11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895 0 1.692-.717 1.426-1.826zm-34.147 1.828c-.715 4.272-4.421 7.531-8.896 7.531-4.475 0-8.18-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.715-4.271 4.421-7.531 8.896-7.531 4.475 0 8.18 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5zm25.675 0c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.716-4.271 4.421-7.531 8.896-7.531 4.475 0 8.181 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5z" />
+      </g>
+      <g class="star">
+        <g>
+          <path
+            d="M50.686,16.125c-2.485,0-4.499-2.014-4.499-4.499c0,2.485-2.014,4.499-4.499,4.499 c2.485,0,4.499,2.014,4.499,4.499C46.187,18.139,48.2,16.125,50.686,16.125z" />
+        </g>
+      </g>
+      <g class="star">
+        <g>
+          <path
+            d="M37.904,19.626c-1.519,0-2.749-1.23-2.749-2.749c0,1.519-1.23,2.749-2.749,2.749 c1.519,0,2.749,1.229,2.749,2.749C35.155,20.855,36.386,19.626,37.904,19.626z" />
+        </g>
+      </g>
+      <g class="star">
+        <g>
+          <path
+            d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z" />
+        </g>
+      </g>
+    </symbol>
+  </svg>
   <div class="page-header__wrapp">
     <header class="page-header">
       <div class="page-header__wrapp-content">
-        <a class="page-header__logo" href="#">
-          <img class="page-header__logo-image" src="/source/img/logo-pink-white-mobile.svg" width="75" height="25"
-            alt="Логотип сайта Pink">
+        <a class="page-header__logo" alt="Логотип сайта Pink" href="#">
+          <svg class="page-header__logo--image" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375">
+            <use xlink:href="#icon-pink"></use>
+          </svg>
         </a>
       </div>
       <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -44,14 +82,24 @@
     <main class="page-main">
       <div class="page-main__wrapper">
         <section class="info">
-          <img class="info__photo-image" src="http://placehold.it/150x100" width="320" height="314"
-            alt="Как выглядит приложение в телефоне">
+          <picture>
+            <img class="info__photo-image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png"
+              width="320" height="314" alt="Как выглядит приложение в телефоне">
+          </picture>
         </section>
         <section class="download">
           <h1 class="download__headline">
             Взгляните на жизнь иначе!
           </h1>
           <a class="button download__link" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+          <div class="download__link--image link__image">
+            <a class="link__imagec link-apple" href="https://www.apple.com/ru/ios/app-store/"><img
+                src="img/apple-logo-svg.svg"></a>
+            <a class="link__image link-google" href="https://play.google.com/store?hl=ru"><img
+                src="img/logo-android.svg"></a>
+            <a class="link__image link--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home"><img
+                src="img/logo-microsoft.svg"></a>
+          </div>
           <p class="download__item">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
@@ -59,19 +107,24 @@
       </div>
   </div>
   <section class="advantages">
-    <div class="advantages offer">
+    <div class="advantages__offer offer">
       <h2 class="offer__heading">
-        Устали от серости мегаполиса?<br>
+        Устали от серости мегаполиса?
+      </h2>
+      <h2 class="offer__heading">
         Нам есть, что вам предложить!
       </h2>
-    </div>
     </div>
     <div class="advantages__example">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
-          <img class="advantages__list--photo" src="http://placehold.it/150x100" width="157" height="320"
-            alt="Демонстрация приложения">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+            <img class="advantages__list--photo" src="img/iphone-screen-1-tablet@1x"
+              srcset="img/iphone-screen-1-tablet@2x.png " width="186" height="382" alt="Демонстрация приложения">
+          </picture>
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__description">
             Приложение позволит вам победить осеннюю хандру и депрессию
@@ -79,8 +132,12 @@
           </p>
         </li>
         <li class="advantages__item">
-          <img class="advantages__list--photo" src="http://placehold.it/150x100" width="157" height="320"
-            alt="Демонстрация приложения">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+            <img class="advantages__list--photo" src="img/iphone-screen-2-tablet@1x@1x.png"
+              srcset="img/iphone-screen-2-tablet@2x.png " width="186" height="382" alt="Демонстрация приложения">
+          </picture>
           <h3 class="advantages__title">Меняет мир вокруг</h3>
           <p class="advantages__description">
             Сделайте снимок и украсьте его смайликом или текстовой подписью,
@@ -88,8 +145,12 @@
           </p>
         </li>
         <li class="advantages__item">
-          <img class="advantages__list--photo" src="http://placehold.it/150x100" width="157" height="320"
-            alt="Демонстрация приложения">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+            <img class="advantages__list--photo" src="img/iphone-screen-3-tablet@1x.png"
+              srcset="img/iphone-screen-3-tablet@2x.png " width="186" height="382" alt="Демонстрация приложения">
+          </picture>
           <h3 class="advantages__title">Заводит новых друзей</h3>
           <p class="advantages__description">
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
@@ -98,16 +159,26 @@
         </li>
       </ul>
       <div class="advantages__photo">
-        <img class="advantages__list--image" src="http://placehold.it/150x100" width="157" height="320"
-          alt="Демонстрация приложения">
+        <picture>
+          <source media="(min-width: 660px)"
+            srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+          <img class="advantages__list--image" src="img/iphone-screen-mobile@1x.png"
+            srcset="img/iphone-screen-mobile@2x.png" width="157" height="320" alt="Демонстрация приложения">
+        </picture>
       </div>
     </div>
     <div class="advantages__fact fact">
       <div class="fact__wapper-image">
-        <!--Зaглушка для svg-->
-        <svg>
-          <text x="0" y="15">
-            <tspan style="font-weight: bold;">24</tspan>
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="298px" height="345.097px" xml:space="preserve">
+          <path fill="#dedede"
+            d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" />
+          <g>
+            <path fill="#d22856"
+              d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z" />
+          </g>
+          <text fill="#d22856" x="95" y="220">
+            <tspan style="font-weight: bold;font-size: 96px;">24</tspan>
           </text>
         </svg>
       </div>
@@ -122,6 +193,15 @@
   <section class="reviews">
     <h2 class="reviews__title visually-hidden">Отзывы о нас</h2>
     <ul class="reviews__wrapper slider">
+      <button class="reviews__button button--left">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719"
+          enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+          <path
+            d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z" />
+        </svg>
+      </button>
+
       <li class="reviews__list slider__list">
         <div class="reviews author">
           <cite class="author__name">Николай Петров</cite>
@@ -136,12 +216,34 @@
             будущей женой в комментариях к выложенной фотографии!»
           </p>
         </blockquote>
+        <div class="reviews__quotes">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="78.672px" height="63.789px" viewBox="0 0 78.672 63.789"
+            enable-background="new 0 0 78.672 63.789" xml:space="preserve">
+            <g>
+              <path fill="#efefef"
+                d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z" />
+            </g>
+            <g>
+              <path fill="#efefef"
+                d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z" />
+            </g>
+          </svg>
+        </div>
       </li>
+      <button class="reviews__button button--right">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719"
+          enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+          <path
+            d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z" />
+        </svg>
+      </button>
     </ul>
     <p class="reviews__toggles slider__toggles">
-      <button class="slider__toggle slider__toggle--active" type="button">1</button>
-      <button class="slider__toggle" type="button">2</button>
-      <button class="slider__toggle" type="button">3</button>
+      <button class="slider__toggle slider__toggle--active" type="button">&ensp;</button>
+      <button class="slider__toggle" type="button"></button>
+      <button class="slider__toggle" type="button"></button>
     </p>
   </section>
   <section class="tariffs">
@@ -165,18 +267,31 @@
         </div>
         <div class="components__availability">
           <p class="components__description">Розовый фильтр</p>
-          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-            alt="Входит в тариф">
+          <svg class="components__existence--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+            viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+            xml:space="preserve">
+            <path
+              d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+          </svg>
         </div>
         <div class="components__availability">
           <p class="components__description">Смайлики</p>
-          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-            alt="Входит в тариф">
+          <svg class="components__existence--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px"
+            viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+            <path
+              d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+          </svg>
         </div>
         <div class="components__availability">
           <p class="components__description">Комментарии</p>
-          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-            alt="Входит в тариф">
+          <svg class="components__existence--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px"
+            viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+            <path
+              d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+          </svg>
         </div>
       </div>
       <div class="tariffs__companents standart slider">
@@ -186,18 +301,32 @@
         </div>
         <div class="components__availability">
           <p class="components__description">Розовый фильтр</p>
-          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-            alt="Входит в тариф">
+          <svg class="components__existence--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+            viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+            xml:space="preserve">
+            <path
+              d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+          </svg>
         </div>
         <div class="components__availability">
           <p class="components__description">Смайлики</p>
-          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-            alt="Входит в тариф">
+          <svg class="components__existence--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+            viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+            xml:space="preserve">
+            <path
+              d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+          </svg>
         </div>
         <div class="components__availability">
           <p class="components__description">Комментарии</p>
-          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-            alt="Входит в тариф">
+          <svg class="components__existence--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px"
+            viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+            <path
+              d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+          </svg>
         </div>
       </div>
       <div class="tariffs__companents anlim slider">
@@ -207,27 +336,41 @@
         </div>
         <div class="components__availability">
           <p class="components__description">Розовый фильтр</p>
-          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-            alt="Входит в тариф">
+          <svg class="components__existence--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+            viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+            xml:space="preserve">
+            <path
+              d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+          </svg>
         </div>
         <div class="components__availability">
           <p class="components__description">Смайлики</p>
-          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-            alt="Входит в тариф">
+          <svg class="components__existence--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+            viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+            xml:space="preserve">
+            <path
+              d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+          </svg>
         </div>
         <div class="components__availability">
           <p class="components__description">Комментарии</p>
-          <img class="components__existence" src="http://placehold.it/150x100" width="31" height="21"
-            alt="Входит в тариф">
+          <svg class="components__existence--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+            viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+            xml:space="preserve">
+            <path
+              d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+          </svg>
         </div>
       </div>
     </div>
-    </ul>
-    <p class="tariffs__toggles slider__toggles">
-      <button class="slider__toggle" type="button">1</button>
-      <button class="slider__toggle slider__toggle--active" type="button">2</button>
-      <button class="slider__toggle" type="button">3</button>
-      </div>
+    <div class="tariffs__toggles slider__toggles">
+      <button class="slider__toggle" type="button"></button>
+      <button class="slider__toggle slider__toggle--active" type="button"></button>
+      <button class="slider__toggle" type="button"></button>
+    </div>
   </section>
   </main>
   <footer class="page-footer">
@@ -241,7 +384,7 @@
       </li>
       <li class="page-footer__list">
         <p class="page-footer__item">Пишите:</p>
-        <p class="page-footer__info">mail@htmlacademy.ru</p>
+        <a class="page-footer__info">mail@htmlacademy.ru</a>
       </li>
       <li class="page-footer__list">
         <p class="page-footer__item">Приезжайте в гости:</p>
@@ -249,13 +392,45 @@
       </li>
     </ul>
     <div class="page-footer__map">
-      <iframe
+      <div class="map"></div>
+      <iframe class="map__info"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858715614293!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562944916394!5m2!1sru!2sru"
-        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        width="320" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="page-footer__wrapper">
       <div class="footer-logo">
-        <img class="footer-logo__photo" src="http://placehold.it" width="147" height="40" alt="Логотип Pink с очками">
+        <svg>
+          <g class="footer-pink--mobile">
+            <path
+              d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.064c0 4.861-4.057 7.373-8.854 7.373h-5.475v6.825c0 .708-.58 1.288-1.288 1.288-.676 0-1.256-.58-1.256-1.288v-20.12zm8.114 10.98c3.734 0 6.182-1.996 6.182-4.959v-.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917h5.57v-.001zM93.603 18.5c0-.708.579-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283a1.29 1.29 0 0 1-1.288 1.287c-.676 0-1.255-.579-1.255-1.287V18.5zM102.744 18.532c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.676 0 1.224.58 1.224 1.256v20.349c0 .676-.481 1.19-1.158 1.19h-.129c-.548 0-.935-.321-1.319-.772l-13.975-17.868v17.45c0 .676-.547 1.256-1.256 1.256-.676 0-1.223-.58-1.223-1.256V18.532h-.002zM128.173 18.5c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.168c.29-.257.579-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.162.644-.42.901l-7.984 7.92 8.564 10.561c.225.291.354.547.354.935 0 .676-.578 1.288-1.286 1.288-.483 0-.806-.258-1.03-.58l-8.402-10.463-4.863 4.861v4.894a1.29 1.29 0 0 1-1.286 1.288c-.677 0-1.257-.58-1.257-1.288V18.5h-.004z" />
+          </g>
+          <g class="footer-star">
+            <path
+              d="M98.498,9.875c-2.002,0-3.623-1.623-3.623-3.624c0,2.001-1.623,3.624-3.625,3.624 c2.002,0,3.625,1.623,3.625,3.624C94.875,11.498,96.496,9.875,98.498,9.875z" />
+          </g>
+          <g class="footer-pink--glass">
+            <path
+              d="M60.462 28.016L55.287 6.651C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 1 0 0 3c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.742-5.927-5.802-10.531-11.927-10.531s-11.186 4.604-11.927 10.531h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42L8.187 7.143C8.25 6.729 8.97 3 13.826 3a1.5 1.5 0 1 0 0-3C7.82 0 5.588 4.303 5.227 6.651L.052 28.016c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.741 5.926 5.802 10.53 11.927 10.53s11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895 0 1.692-.717 1.426-1.826zm-34.147 1.828c-.715 4.272-4.421 7.531-8.896 7.531-4.475 0-8.18-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.715-4.271 4.421-7.531 8.896-7.531 4.475 0 8.18 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5zm25.675 0c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.716-4.271 4.421-7.531 8.896-7.531 4.475 0 8.181 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5z" />
+          </g>
+          <g class="footer-star">
+            <g>
+              <path
+                d="M50.686,16.125c-2.485,0-4.499-2.014-4.499-4.499c0,2.485-2.014,4.499-4.499,4.499 c2.485,0,4.499,2.014,4.499,4.499C46.187,18.139,48.2,16.125,50.686,16.125z" />
+            </g>
+          </g>
+          <g class="footer-star">
+            <g>
+              <path
+                d="M37.904,19.626c-1.519,0-2.749-1.23-2.749-2.749c0,1.519-1.23,2.749-2.749,2.749 c1.519,0,2.749,1.229,2.749,2.749C35.155,20.855,36.386,19.626,37.904,19.626z" />
+            </g>
+          </g>
+          <g class="footer-star">
+            <g>
+              <path
+                d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z" />
+            </g>
+          </g>
+        </svg>
       </div>
       <div class="footer__social">
         <ul class="footer__social__list">
@@ -297,8 +472,13 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__photo"
-            src="http://placehold.it" width="27" height="34" alt="Логотп Html academy"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
+            enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path
+              d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
+          </svg></a>
       </div>
     </div>
   </footer>

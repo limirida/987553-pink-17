@@ -57,7 +57,16 @@
   padding: 20px;
   text-align: center;
   box-shadow: 0 1px 0 0 #000000;
+
+  &:hover {
+    color: @lipstick;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
+
 
 .site-list__link {
   text-decoration: none;
@@ -65,6 +74,14 @@
   font-weight: bold;
   line-height: 1.78;
   color: #ffffff;
+
+  &:hover {
+    color: @lipstick;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .main-nav--nojs .main-nav__wrapper {
@@ -93,11 +110,12 @@
 
   .site-list {
     display: flex;
-    justify-content: space-around;
-    background: none;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   .site-list__item {
+    padding: 40px;
     box-shadow: none;
   }
 }

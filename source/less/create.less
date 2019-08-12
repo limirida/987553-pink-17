@@ -9,9 +9,13 @@
 }
 
 .create__list {
+  width: 200px;
   list-style: none;
   padding: 0;
   display: flex;
+  justify-content: space-around;
+  margin: 42px auto;
+  align-items: center;
 }
 
 .create__panel {
@@ -28,6 +32,16 @@
   line-height: 1;
   border: solid 3px #d22856;
   color: #d22856;
+  margin-bottom: 12px;
+
+  &:hover {
+    color: @white;
+    background-color: @lipstick;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .creation___cancellation {
@@ -37,6 +51,17 @@
   line-height: 1;
   border: solid 3px rgba(40, 54, 69, 0.1);
   color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    border: solid 3px rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    opacity: 0.3;
+    border: solid 3px rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .create__range {
@@ -66,7 +91,8 @@
 }
 
 .create__photo {
-  width: 300px;
+  width: 280px;
+  margin: 0 20px;
 }
 
 .creation__panel {
@@ -74,9 +100,28 @@
   flex-wrap: wrap;
 }
 
+.create__button {
+  border: none;
+  background: none;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: @lipstick;
+    opacity: 1;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .create {
     flex-direction: row;
+  }
+
+  .create__item {
+    display: flex;
   }
 
   .create__range {
@@ -84,27 +129,70 @@
   }
 
   .create__list {
+    flex-grow: 1;
     flex-direction: column;
   }
 
   .create__list__wrapper {
+    margin-left: 30px;
     width: 260px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .creation__post {
+    margin: 0;
+  }
+
+  .creation__panel {
+    flex-grow: 2;
+  }
+
+  .create__range__toggle {
+    top: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .create {
+    margin: 57px 130px;
+  }
+
+  .create__item {
+    width: 410px;
+  }
+
+  .create__list {
+    margin: 57px 70px 0;
+    display: block;
+    max-height: 314px;
+  }
+
+  .create__photo {
+    margin: 57px 80px;
+  }
+
+  .create__button {
+    width: 22px;
+    height: 22px;
+  }
+
   .create__list__wrapper {
+    margin-left: -50px;
     width: 410px;
   }
 
   .creation__panel {
-    justify-content: space-between;
+    margin: 0;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 0;
   }
 
   .creation__post {
     width: 183px;
+    margin-right: 44px;
   }
 
   .creation___cancellation {
