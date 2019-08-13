@@ -6,10 +6,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #283645;
-  background-position: 50% -100px;
 }
 
 .page-header__logo {
+  display: block;
   width: 75px;
   margin: 20px;
   fill: @white;
@@ -88,10 +88,21 @@
     }
   }
 
+  .page-header__wrapp-content {
+    background: none;
+    display: block;
+  }
+
   .page-header {
     flex-grow: 1;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 130px;
+    align-items: center;
+  }
+
+  .page-header__logo {
+    margin: 0;
   }
 
   .main-nav__toggle {
@@ -101,13 +112,5 @@
   .star {
     display: inline-block;
     fill: #d22856;
-  }
-
-  .page-header__wrapp-content {
-    display: block;
-  }
-
-  .page-header__logo--image {
-    margin: 27px 130px 43px;
   }
 }
