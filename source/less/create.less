@@ -1,4 +1,5 @@
 .create {
+  width: 100%;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -84,7 +85,7 @@
   width: 14px;
   height: 14px;
   background: #f2f2f2;
-  border: 3px solid #d22856;
+  border: 2px solid #d22856;
   border-radius: 52%;
   box-shadow: 0 2px 1px 0 rgba(225, 225, 225, 0.3);
   cursor: pointer;
@@ -122,6 +123,7 @@
 
   .create__item {
     display: flex;
+    align-items: center;
   }
 
   .create__range {
@@ -152,10 +154,16 @@
   .create__range__toggle {
     top: 30px;
   }
+
+  .create__button {
+    fill: @lipstick;
+    opacity: 1;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .create {
+    width: 940px;
     margin: 57px 130px;
   }
 
