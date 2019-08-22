@@ -1,18 +1,42 @@
-.page-header__wrapp {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #283645;
+.page-header {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: @white;
+  width: 100%;
+  z-index: 2;
+
+  @media (min-width: @tablets) {
+    min-height: 110px;
+  }
+
+  &--full {
+    position: relative;
+    background-color: @dark;
+
+    @media (min-width: @desktop) {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 
-.page-header__logo {
-  display: block;
+.page-header__wrapper {
+  width: 100%;
+
+  @media (min-width: @desktop) {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
+
+.logo-pink-header {
+  display: inline-block;
+  vertical-align: top;
+  margin: 22px 20px;
   width: 75px;
-  margin: 20px;
-  fill: @white;
+  height: 22px;
 
   &:hover {
     fill: #d22856;
@@ -22,95 +46,55 @@
     fill: @white;
     opacity: 0.3;
   }
-}
 
-.page-header__logo--image {
-  margin-left: -70px;
-}
-
-.main-nav__toggle {
-  position: absolute;
-  display: block;
-  padding: 0;
-  width: 52px;
-  height: 26px;
-  top: -60px;
-  right: 20px;
-  background: none;
-  cursor: pointer;
-  border: none;
-}
-
-.page-header__wrapp-content {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.star {
-  display: none;
-}
-
-.icon-pink--glass {
-  width: 0;
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .page-header__wrapp {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center bottom;
-
-    @media (min-width: 660px) and (min-resolution: 144dpi) and (min-width: 660px) and (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-    }
-  }
-
-  .page-header__logo {
+  @media (min-width: @tablets) {
+    margin-top: 27px;
+    margin-bottom: 43px;
     width: 147px;
+    height: 40px;
   }
 
-  .icon-pink--glass {
-    display: inline;
-  }
-
-  .page-header__logo--image {
+  @media (min-width: @desktop) {
     margin-left: 0;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .page-header__wrapp {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: 50% 20%;
+.logo-pink-header__svg {
+  fill: @white;
+  margin-top: -17px;
+  margin-left: -72px;
 
-    @media (min-width: 1200px) and (min-resolution: 144dpi) and (min-width: 1200px) and (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
+  @media (min-width: @tablets) {
+    margin: 0;
   }
+}
 
-  .page-header__wrapp-content {
-    background: none;
+.logo-pink-header__glasses {
+  display: none;
+
+  @media (min-width: @tablets) {
     display: block;
   }
 
-  .page-header {
-    flex-grow: 1;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 0 130px;
-    align-items: center;
-  }
-
-  .page-header__logo {
-    margin: 0;
-  }
-
-  .main-nav__toggle {
+  @media (min-width: @desktop) {
     display: none;
   }
+}
 
-  .star {
-    display: inline-block;
-    fill: #d22856;
+.logo-pink-header__glasses-crop {
+  display: none;
+
+  @media (min-width: @desktop) {
+    display: block;
+  }
+}
+
+.logo-pink-header__stars,
+.logo-pink-header__star {
+  display: none;
+
+  @media (min-width: @desktop) {
+    display: block;
+    fill: currentColor;
   }
 }

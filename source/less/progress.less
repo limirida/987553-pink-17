@@ -1,0 +1,121 @@
+.progress {
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-bottom: 41px;
+  border: none;
+  padding: 0;
+}
+
+.progress-info {
+  padding-bottom: 52px;
+  padding-top: 34px;
+  background-color: #f2f2f2;
+}
+
+.progress__list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.progress__item:nth-child(6) {
+  padding-bottom: 50px;
+}
+
+.progress__item {
+  margin-left: 90px;
+  padding-bottom: 63px;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: left;
+  color: #283645;
+}
+
+.progress__item label {
+  position: relative;
+}
+
+.progress__item input:not(:checked)+label::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: solid 2px @white-two;
+  background-color: #ffffff;
+  left: -62px;
+}
+
+.progress__item input:checked+label::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: solid 2px @white-two;
+  background-color: #ffffff;
+  left: -62px;
+}
+
+.progress__item input:not(:checked)+label::after {
+  content: "";
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -50px;
+  top: 4px;
+}
+
+.progress__item input:checked+label::after {
+  content: "";
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -50px;
+  top: 4px;
+}
+
+
+@media (min-width: @tablets) {
+  .progress {
+    order: 5;
+    width: 616px;
+    border: solid 2px #e5e5e5;
+    background: none;
+    margin-bottom: 49px;
+  }
+
+  .progress__list {
+    padding-top: 54px;
+  }
+
+  .progress-info {
+    background: none;
+    padding: 44px 32px 0;
+  }
+
+  .progress__item {
+    margin-left: 119px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .progress {
+    width: 100%;
+  }
+
+  .progress__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 200px;
+
+  }
+
+  .progress__item {
+    margin: 0 auto;
+    text-align: left;
+  }
+}

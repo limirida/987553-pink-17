@@ -12,6 +12,7 @@
 .panorama__photo {
   width: 100%;
   margin: 0;
+  display: block;
 }
 
 .gallery__post {
@@ -98,6 +99,7 @@
 }
 
 .gallery__wrapper--panorama {
+  display: flex;
   width: 280px;
   min-height: 192px;
   margin: 0 auto;
@@ -110,7 +112,7 @@
   padding: 25px 23px 17px 31px;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @tablets) {
   .gallery__wrapper--panorama {
     width: 620px;
     margin: 0 20px;
@@ -130,19 +132,30 @@
   }
 
   .likes--panorama {
+    margin-top: 11px;
     order: 1;
+    padding-right: 28px;
+  }
+
+  .gallery__user-wrapper {
+    margin-top: 31px;
   }
 
   .gallery__post__user-text {
+    width: 100%;
     min-height: 59px;
     font-size: 14px;
     line-height: 1.71;
-    margin: 0 auto;
+    margin: 0 84px 0 28px;
     order: 3;
   }
 
+  .like__info {
+    width: 200px;
+  }
+
   .gallery__post__user-info {
-    padding: 31px 42px 23px 27px;
+    padding: 0;
   }
 
   .likes {
@@ -151,7 +164,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @desktop) {
   .gallery__list {
     width: 1000px;
     margin: 0 auto;

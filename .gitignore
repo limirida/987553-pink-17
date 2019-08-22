@@ -10,4 +10,6 @@ node_modules/
 npm-debug.*
 source/css/*.css
 source/css/*.map
+source/js/*.picturefill
+source/js/*.picturefill.min
 Thumbs.db
