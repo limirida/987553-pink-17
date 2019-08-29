@@ -1,0 +1,12 @@
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablets) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-top: 0;
+  }
+}

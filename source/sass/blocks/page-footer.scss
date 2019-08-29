@@ -1,0 +1,39 @@
+.page-footer__map-wrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+
+  @media (min-width: $tablets) {
+    height: 372px;
+  }
+
+  @media (min-width: $desktops) {
+    height: 502px;
+  }
+}
+
+.page-footer__wrapper {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (max-width: $phones-max) {
+    text-align: center;
+
+    &--index {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablets) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 34px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-top: 70px;
+    padding-bottom: 68px;
+  }
+}

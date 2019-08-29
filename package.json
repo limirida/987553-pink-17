@@ -6,20 +6,26 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
-    "browser-sync": "2.26.x",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
     "gulp": "4.0.x",
-    "gulp-less": "^4.0.1",
+    "gulp-csso": "^3.0.1",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "2.6.x",
+    "gulp-webp": "^4.0.1",
+    "node-sass": "^4.12.0",
+    "posthtml-include": "^1.2.0",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp css",
+    "build": "gulp build",
     "start": "gulp start"
   },
   "browserslist": [
@@ -33,12 +39,14 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.16"
   },
   "dependencies": {
-    "mixin": "^0.2.0"
+    "gulp-clean": "^0.4.0",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-rename": "^1.4.0"
   }
 }
