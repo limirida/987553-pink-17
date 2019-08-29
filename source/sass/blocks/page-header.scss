@@ -1,0 +1,32 @@
+.page-header {
+  position: absolute;
+  background-color: rgba($black, 0.3);
+  color: $white;
+  width: 100%;
+  z-index: 2;
+
+  @media (min-width: $tablets) {
+    min-height: 110px;
+  }
+
+  &--full {
+    position: relative;
+    background-color: $blue-dark;
+
+    @media (min-width: $desktops) {
+      position: absolute;
+      background-color: rgba($black, 0.3);
+    }
+  }
+}
+
+.page-header__wrapper {
+  width: 100%;
+
+  @media (min-width: $desktops) {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
