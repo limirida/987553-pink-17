@@ -21,7 +21,7 @@
       height: 63.789px;
       transform: translateX(-50%);
       margin-left: 2px;
-      background: url(../img/icon-quotes.svg) no-repeat top left;
+      background: url("../img/icon-quotes.svg") no-repeat top left;
       background-size: 78.672px 63.789px;
     }
   }
@@ -53,6 +53,7 @@
   text-align: center;
   font-size: 14px;
   line-height: 30px;
+  margin: 0;
 
   &:not(:first-child) {
     display: none;
@@ -145,12 +146,12 @@
 
   &--previous {
     left: 0;
-    background: url(../img/icon-review-arrow-left.svg) no-repeat top left;
+    background: url("../img/icon-review-arrow-left.svg") no-repeat top left;
   }
 
   &--next {
     right: 0;
-    background: url(../img/icon-review-arrow-right.svg) no-repeat top left;
+    background: url("../img/icon-review-arrow-right.svg") no-repeat top left;
   }
 }
 

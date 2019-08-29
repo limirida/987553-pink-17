@@ -120,7 +120,7 @@
     background-position: center top;
 
     @media (min-resolution: $retina-dpi),
-          (min-resolution: $retina-dppx) {
+      (min-resolution: 1.5dppx) {
       background-image: url("../img/iphone-screen-mobile@2x.png");
       background-size: 157px auto;
     }
@@ -178,7 +178,7 @@
     }
 
     @media (min-width: $tablets) and (min-resolution: $retina-dpi),
-          (min-width: $tablets) and (min-resolution: $retina-dppx) {
+      (min-width: 660px) and (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-1-tablet@2x.png");
       background-size: 268px auto;
     }
@@ -188,7 +188,7 @@
     }
 
     @media (min-width: $desktops) and (min-resolution: $retina-dpi),
-          (min-width: $desktops) and (min-resolution: $retina-dppx) {
+      (min-width: $desktops) and (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
       background-size: 292px auto;
     }
@@ -200,7 +200,7 @@
     }
 
     @media (min-width: $tablets) and (min-resolution: $retina-dpi),
-          (min-width: $tablets) and (min-resolution: $retina-dppx) {
+      (min-width: 660px) and (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-2-tablet@2x.png");
       background-size: 268px auto;
     }
@@ -210,7 +210,7 @@
     }
 
     @media (min-width: $desktops) and (min-resolution: $retina-dpi),
-          (min-width: $desktops) and (min-resolution: $retina-dppx) {
+      (min-width: 1200px) and (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-2-desktop@2x.png");
       background-size: 292px auto;
     }
@@ -222,7 +222,7 @@
     }
 
     @media (min-width: $tablets) and (min-resolution: $retina-dpi),
-          (min-width: $tablets) and (min-resolution: $retina-dppx) {
+      (min-width: 660px) and (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
       background-size: 268px auto;
     }
@@ -232,7 +232,7 @@
     }
 
     @media (min-width: $desktops) and (min-resolution: $retina-dpi),
-          (min-width: $desktops) and (min-resolution: $retina-dppx) {
+      (min-width: 1200px) and (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-3-desktop@2x.png");
       background-size: 292px auto;
     }
@@ -273,7 +273,7 @@
 
   @media (min-width: $desktops) {
     background-color: $grey-light;
-    padding-top: 0px;
+    padding-top: 0;
   }
 }
 

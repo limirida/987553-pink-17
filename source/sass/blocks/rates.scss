@@ -5,11 +5,11 @@
 }
 
 .rates__wrapper {
+  @include angled-bg;
   position: relative;
   background-color: $grey-light;
   padding-top: 91px;
   padding-bottom: 42px;
-  @include angled-bg;
   max-width: 100%;
   overflow: hidden;
 
@@ -50,12 +50,9 @@
   }
 }
 
-.rates__header + .rates__header {
+.rates__header {
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
-}
-
-.rates__header {
   position: relative;
   background-color: $blue-dark;
   color: $white;
@@ -94,13 +91,13 @@
     left: -2px;
     width: 74px;
     height: 73px;
-    background: url(../img/bg-hit.svg) no-repeat top left;
+    background: url("../img/bg-hit.svg") no-repeat top left;
     background-size: 74px 73px;
 
     @media (min-width: $tablets) and (max-width: $tablets-max) {
       width: 61px;
       height: 61px;
-      background: url(../img/bg-hit-tablet.svg) no-repeat top left;
+      background: url("../img/bg-hit-tablet.svg") no-repeat top left;
       background-size: 61px 61px;
     }
 

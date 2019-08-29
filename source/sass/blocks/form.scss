@@ -34,10 +34,10 @@
   max-width: 100%;
 
   @media (min-width: $tablets) {
-    padding: 0;
     margin-bottom: 65px;
     border: 2px solid $grey;
     border-radius: 2px;
+    padding: 0;
   }
 
   @media (min-width: $desktops) {
@@ -49,7 +49,6 @@
   }
 
   &--fullname {
-
     @media (max-width: $phones-max) {
       padding-top: 24px;
     }
@@ -217,7 +216,7 @@
   }
 }
 
-.form__text-label + .form__input-wrapper {
+.form__text-label .form__input-wrapper {
   margin-top: 6px;
 
   @media (min-width: $tablets) {
@@ -249,7 +248,7 @@
   &--email {
     @media (min-width: $tablets) {
       &::before {
-        background: $grey url(../img/icon-mail.svg) no-repeat center;
+        background: $grey url("../img/icon-mail.svg") no-repeat center;
         background-size: 18px 13px;
       }
     }
@@ -258,7 +257,7 @@
   &--phone {
     @media (min-width: $tablets) {
       &::before {
-        background: $grey url(../img/icon-phone.svg) no-repeat center;
+        background: $grey url("../img/icon-phone.svg") no-repeat center;
         background-size: 20px 19px;
       }
     }
@@ -287,7 +286,7 @@
   }
 }
 
-.form__text-label + .form__text-input {
+.form__text-label .form__text-input {
   margin-top: 6px;
 
   @media (min-width: $tablets) {
@@ -298,7 +297,7 @@
 .form__text-input {
   display: block;
   box-sizing: border-box;
-  padding:  14px 20px 15px;
+  padding: 14px 20px 15px;
   width: 100%;
   border: 2px solid $grey;
   border-radius: 2px;
@@ -427,14 +426,14 @@
   opacity: 0;
 }
 
-.form__checkbox-input:checked ~ .form__checkbox-label::after {
+.form__checkbox-input:checked .form__checkbox-label::after {
   content: "";
   position: absolute;
   top: 11px;
   left: 9px;
   width: 22px;
   height: 16px;
-  background: url(../img/icon-check.svg) no-repeat top left;
+  background: url("../img/icon-check.svg") no-repeat top left;
   background-size: 22px 16px;
   z-index: 1;
 }
@@ -513,7 +512,7 @@
   opacity: 0;
 }
 
-.form__radio-input:checked ~ .form__radio-label::after {
+.form__radio-input:checked .form__radio-label::after {
   content: "";
   display: block;
   position: absolute;
@@ -537,7 +536,7 @@
 }
 
 .form__textarea {
-  padding:  14px 20px 14px;
+  padding: 14px 20px 14px;
   margin: 0;
   display: block;
   border: 2px solid $grey;

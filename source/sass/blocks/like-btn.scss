@@ -6,7 +6,9 @@
   padding: 0;
   text-indent: -1000px;
   overflow: hidden;
-  background: url("../img/icon-heart.svg") no-repeat center;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 13px 12px;
   outline: none;
   cursor: pointer;

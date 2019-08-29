@@ -9,13 +9,12 @@
 }
 
 .main-nav__items {
+  @include reset-list;
   display: block;
   text-align: center;
-  @include reset-list;
 
   @media (min-width: $desktops) {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     flex-direction: row;
     border-top: none;
@@ -74,7 +73,6 @@
   }
 
   @media (min-width: $tablets) {
-
     &[href]:hover,
     &[href]:focus {
       color: $pink;
@@ -131,7 +129,7 @@
   display: block;
   width: 50px;
   height: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 1px;
 
   &::before,
@@ -141,7 +139,7 @@
     left: 0;
     width: 50px;
     height: 4px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 1px;
   }
 
@@ -154,8 +152,7 @@
   }
 }
 
-.main-nav--opened .main-nav__trigger span {
-
+.main-nav--opened .main-nav__trigger {
   &::before,
   &::after {
     content: "";
@@ -164,7 +161,7 @@
     top: 10px;
     width: 29px;
     height: 4px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 1px;
   }
 

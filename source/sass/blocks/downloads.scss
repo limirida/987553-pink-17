@@ -74,17 +74,20 @@
   margin-left: 16px;
 
   &--apple {
-    background: url(../img/logo-apple.svg) no-repeat top left;
+    background: url("../img/logo-apple.svg") top left;
+    background-repeat: no-repeat;
     background-size: 47px 56px;
   }
 
   &--android {
-    background: url(../img/logo-android.svg) no-repeat center 8px;
+    background: url("../img/logo-android.svg") center 8px;
+    background-repeat: no-repeat;
     background-size: 43px 47px;
   }
 
   &--windows {
-    background: url(../img/logo-microsoft.svg) no-repeat right 12px;
+    background: url("../img/logo-microsoft.svg") right 12px;
+    background-repeat: no-repeat;
     background-size: 44px 41px;
   }
 }
