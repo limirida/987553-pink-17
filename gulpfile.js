@@ -19,11 +19,11 @@ var jsmin = require("gulp-jsmin");
 var del = require("del");
 var run = require("run-sequence");
 
-gulp.task("clean", function() {
+gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("copy", function() {
+gulp.task("copy", function () {
   return gulp
     .src(
       [
@@ -31,22 +31,23 @@ gulp.task("copy", function() {
         "sourse/img/**",
         "sourse/js/**",
         "sourse/*.html"
-      ],
-      {
+      ], {
         base: "sourse"
       }
     )
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("style", function() {
+gulp.task("style", function () {
   gulp
     .src("sourse/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(
       postcss([
-        autoprefixer({ browsers: ["last 2 versions"] }),
+        autoprefixer({
+          browsers: ["last 2 versions"]
+        }),
         mqpacker({
           sort: false
         })
@@ -59,19 +60,23 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("images", function() {
+gulp.task("images", function () {
   return gulp
     .src("build/img/**/*.{png,jpg,gif}")
     .pipe(
       imagemin([
-        imagemin.optipng({ optimizationLevel: 3 }),
-        imagemin.jpegtran({ progressive: true })
+        imagemin.optipng({
+          optimizationLevel: 3
+        }),
+        imagemin.jpegtran({
+          progressive: true
+        })
       ])
     )
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("symbols", function() {
+gulp.task("symbols", function () {
   return gulp
     .src("build/img/icons/*.svg")
     .pipe(svgmin())
@@ -84,7 +89,7 @@ gulp.task("symbols", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("webp", function() {
+gulp.task("webp", function () {
   return gulp
     .src("source/img/**/*.{png,jpg}")
     .pipe(
@@ -95,19 +100,14 @@ gulp.task("webp", function() {
     .pipe(gulp.dest("source/img"));
 });
 
-gulp.task("html", function() {
+gulp.task("html", function () {
   return gulp
     .src("source/*.html")
     .pipe(posthtml([include()]))
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("html:update", ["html:copy"], function(done) {
-  server.reload();
-  done();
-});
-
-gulp.task("js", function() {
+gulp.task("js", function () {
   gulp
     .src("sourse/js/script.js")
     .pipe(gulp.dest("build/js"))
@@ -116,7 +116,7 @@ gulp.task("js", function() {
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("js:copy", function() {
+gulp.task("js:copy", function () {
   return gulp
     .src("sourse/*js/script.js")
     .pipe(gulp.dest("build/js"))
@@ -125,12 +125,12 @@ gulp.task("js:copy", function() {
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("js:update", ["js:copy"], function(done) {
+gulp.task("js:update", ["js:copy"], function (done) {
   server.reload();
   done();
 });
 
-gulp.task("serve", function() {
+gulp.task("serve", function () {
   server.init({
     server: "build/",
     notify: false,
@@ -144,6 +144,6 @@ gulp.task("serve", function() {
   gulp.watch("sourse/js/script.js", ["js:update"]);
 });
 
-gulp.task("build", function(fn) {
+gulp.task("build", function (fn) {
   run("clean", "copy", "html", "style", "js", "images", "symbols", "webp", fn);
 });
