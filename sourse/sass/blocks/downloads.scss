@@ -81,14 +81,6 @@
   &--android {
     background: url("../img/logo-android.svg") no-repeat center 8px;
     background-size: 43px 47px;
-
-    @media (min-width: $tablets) {
-      opacity: 0.4;
-    }
-
-    @media (min-width: $desktops) {
-      opacity: 1;
-    }
   }
 
   &--windows {
